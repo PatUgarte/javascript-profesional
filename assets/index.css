@@ -34,4 +34,5 @@ main {
 
 .movie {
   width: 100%;
+  border-radius: 150px;
 }
