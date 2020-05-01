@@ -39,9 +39,11 @@ main {
 
 .button-pad{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 button {
   margin: 15px;
+  padding: 15px;
+  border-radius: 25px;
 }
