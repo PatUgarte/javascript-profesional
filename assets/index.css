@@ -36,3 +36,12 @@ main {
   width: 100%;
   border-radius: 150px;
 }
+
+.button-pad{
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  margin: 15px;
+}
