@@ -2,12 +2,23 @@ class MediaPlayer {
 
     media: HTMLMediaElement;
     private plugins: any[];
+    container: HTMLElement;
 
     constructor(config) {
         this.media = config.element;
         this.plugins = config.plugins || [];
+        this.initPlayer();
         this.initPlugins();
     }
+
+    // PLAYER
+    private initPlayer() {
+        this.container = document.createElement("div");
+        this.container.style.position = "relative";
+        this.media.parentNode.insertBefore(this.container, this.media);
+        this.container.appendChild(this.media);
+    }
+
 
     // PLUGINS
     private initPlugins() {
