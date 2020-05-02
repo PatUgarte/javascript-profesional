@@ -47,3 +47,20 @@ button {
   padding: 15px;
   border-radius: 25px;
 }
+
+ul{
+  padding:0;
+  margin:0;
+}
+
+.comments-box {
+  margin: 0 10%;
+  padding: 4%;
+  background-color: #ddd;
+  border-radius: 70px;
+}
+
+.comments-box li {
+  margin: 40px;
+  text-align: justify;
+}
